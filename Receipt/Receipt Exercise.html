@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walmart Receipt</title>
+<style>
+	body{
+		margin: 10% 55% 0 25%;
+		border-style: dotted;
+		padding-bottom: 5%;
+
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	section{
+		text-align: center;
+	}
+
+</style>
+</head>
+
+<body>
+
+
+<section>
+	<img src="walmart.png">
+	<p>Save money. Live better.</p>
+	 <p>(919) 526-0000</p>
+	 <p>222 Any Highway</p>
+	 <p>Somewhere, NC 27777</p>
+</section>
+
+<script>
+
+	var eggPr = (1.29);
+	var eggQt = (1);
+
+
+	var waterPr = (3.99);
+	var waterQt = (6);
+
+	var dogFoodPr = (12.98);
+	var dogFoodQt = (1);
+
+	var rstAlmondPr = (4.89);
+	var rstAlmondQt = (2);
+
+	var candlesPr = (4.50 - (4.50*.50));
+	var candlesQt = (2);
+
+	var milkPr = (3.50);
+	var milkQt = (1);
+
+	var total = (eggPr + waterPr +dogFoodPr + rstAlmondPr + candlesPr + milkPr);
+
+	var cash = (4*20);
+
+	var change = (cash-total);
+
+
+
+	document.write("The Best Eggs " + "........... " + (eggQt*eggPr) + "<br/>");
+	document.write("Spring Water " + ".......... " + (waterQt*waterPr) + "<br/>");
+	document.write("Good Dog Dog Food " + ".......... " + (dogFoodQt*dogFoodPr) + "<br/>");
+	document.write("Awesome Almonds " + ".......... " + (rstAlmondQt*rstAlmondPr) + "<br/>");
+	document.write("Soothing Candles " + ".......... " + (candlesQt*candlesPr).toFixed(2) + "<br/>");
+	document.write("Brown's Farm Milk " + ".......... " + (milkQt*milkPr).toFixed(2) + "<br/>");
+	document.write("Total" + ".......... " + total.toFixed(2) + "<br/>" );
+	document.write("Cash Paid" + ".......... " + cash + "<br/>");
+	document.write("Change" + ".......... " + change.toFixed(2) + "<br/>" + "<br/>");
+
+	document.write("# ITEMS SOLD: " + (eggQt+waterQt+candlesQt+dogFoodQt+milkQt+rstAlmondQt));
+
+</script>
+
+<img src="barcode.png">
+
+</body>
+</html>
